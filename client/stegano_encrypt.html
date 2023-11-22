@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Encryption</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Steganography Encryption</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="encryptionForm" method="post"   enctype="multipart/form-data">
+                <label for="imageUpload">Select an image:</label>
+                <input type="file" id="imageUpload" name="files" accept="image/png" required>
+
+                <label for="textToHide">Enter the text to hide:</label>
+                <textarea id="textToHide" name="text_data" rows="4" required></textarea>
+
+                <label for="password">Enter a password:</label>
+                <input type="password" id="password" name="pw" required>
+
+                <button type="submit" class="btn" name="action">Encrypt and Hide Text</button>
+            </form>
+        <!-- </div> -->
+
+        <!-- The container to display the encrypted image and download link -->
+        <!-- <div id="output-container"></div> -->
+    </main>
+
+    <footer>
+        <p>&copy; Stego.io</p>
+    </footer>
+</body>
+</html>

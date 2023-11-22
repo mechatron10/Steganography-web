@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stego: Text output</title>
+    <script src="js/materialize.min.js"></script>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> Include your custom styles here -->
+<!-- </head>
+<body>
+    <div class="container">
+        <div class="card-panel white" id="output-container">
+            <p class="output-text">Decoded text:</p>
+            <h3 class="quotes" id="text"><%= text %></h3>
+            <a href="/" class="btn">Click to go back to the homepage</a>
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stego: Text output</title>
+    <script src="js/materialize.min.js"></script>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> <!-- Include your custom styles here -->
+    <style>
+        /* Add custom styles for the output page */
+        #output-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .output-text {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .quotes {
+            font-size: 28px;
+            color: #444;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-panel white" id="output-container">
+            <p class="output-text">Decoded text:</p>
+            <h3 class="quotes" id="text"><%= text %></h3>
+            <a href="/" class="btn">Click to go back to the homepage</a>
+        </div>
+    </div>
+</body>
+</html>

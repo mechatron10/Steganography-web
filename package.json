@@ -1,0 +1,26 @@
+{
+  "name": "codered-steganography",
+  "version": "1.0.0",
+  "description": "Encode text inside images",
+  "main": "node webserver.js",
+  "scripts": {
+    "start": "node webserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/au5ton/codered-steganography.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/au5ton/codered-steganography/issues"
+  },
+  "homepage": "https://github.com/au5ton/codered-steganography#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "multer": "^1.1.0",
+    "pngjs": "^2.1.0"
+  }
+}

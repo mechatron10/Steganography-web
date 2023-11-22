@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Decryption</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Steganography Decryption</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form method="post"   id="decryptionForm" enctype="multipart/form-data">
+                <label for="encryptedImageUpload">Select the encrypted image:</label>
+                <input type="file" id="encryptedImageUpload" name="original_image" accept="image/png" required>
+
+                <label for="password">Enter the password used for encryption:</label>
+                <input type="password" id="password" name="pw" required>
+
+                <button type="submit" class="btn">Decrypt and Retrieve Text</button>
+            </form>
+        </div>
+
+        <div id="output-container">
+            <!-- The decrypted text will be shown here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Stego.io</p>
+    </footer>
+
+    <script src="../JS/decryption.js"></script>
+</body>
+</html>

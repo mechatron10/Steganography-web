@@ -1,0 +1,38 @@
+1 Discovered the logic file of the encryption that is done using the stego.js and the crypto module that contains the cipher function
+
+
+2 Next goal --- try to understand the logic of the encryption of each of the lines of the code one by one then see how I can do the encryption of the text in the image.
+
+day3 ---02/08/23
+1 steganography app use of the middlewares, pipe, read stream, are clear.
+   In the read stream function the data is being read from the file and from the path that is specified and the output of this read stream serves as the input to the new(to make the instance            of this png encoder ) png encoder will convert the data being read into the png form object and this png object will contain various properties like the height, width etc of the picture. 
+   
+2 use of the png instance is clear (storing the data in this write stream by encoding the image in the png format ).
+3 the png instance has different properties like the data and the height and width of the png image used for processing.
+4 The multer is the module that is used to handle the form data that is being submitted in the front end using the post request and makes the handling of the form data that is being submitted easier 
+5 this --- this is used to refer to the object that is being created using the new png module and the data of this object is processed and then overwritten maybe
+6 The data that is being submitted from the form is accessed using the name attribute of the field using which the form is handling the inputs.
+
+day4---3/08/23
+1 var encrypt = crypto.createCipher('aes-256-cbc', pw);---this is encrypt object is created that indicates the object of crypto class and this object accepts the algorithm and the key that will be used for encryption. and using the upload method of this object we can encrypt and text that we want ....
+2 How the data in the image is stored is learned and the way the data is converted in the form of the pixel array of the objects 
+3 How the data is written inside the pixels (Not understood the logic of encoding the data yet)
+4 The use of the alpha values is to mark the end of the data that is being encoded in the pixel LSB of the alpha pixel is only used for marking the end 
+5 Alpha value is used to tell about the transparency of the image.
+
+
+day->5----7/08/23
+1 Completed the encoding code study and undestanding 
+2 Decoding code understanding.
+3 Learned about the views (They are used to make the dynamic responses to be sent).
+4 Only the coding part is left to be done.
+
+//How does the submit button works in the deocde.html 
+//Basically submitting any form data means the post request and this is handled by the server and in the decode.html if the submit button is pressed then post of the decode path works and we are provided with required image 
+
+
+day->7--- Copy paste the complete code as already understood
+
+Coding progress log
+Day 12/08/23
+1 
